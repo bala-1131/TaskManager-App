@@ -8,6 +8,6 @@ const router = Router({ strict: true });
 router.post("/login", userServices.login);
 router.post("/register", userServices.register);
 router.get("/auth-user", isAuth, userServices.getAuthUser);
-router.get("/getusers",userServices.getUsers);
+router.get("/getusers", userServices.getUsers);
 
 module.exports = router;

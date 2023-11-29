@@ -1,14 +1,18 @@
 const mongoose = require("mongoose");
 
+/**
+ * Connect th server to the MongoDB
+ * @param {*} server
+ */
+
 module.exports = async (server) => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
-    console.log("mongo connection successful..".yellow.underline.bold);
+    console.log("Mongo connection successfull..".yellow.underline.bold);
 
-    // Listening to server
     await server.listen(process.env.PORT || 5000, () =>
       console.log(
-        `server running on ${process.env.NODE_ENV} mode, port ${process.env.PORT}..`
+        `Server running on ${process.env.NODE_ENV} mode, port ${process.env.PORT}...`
           .cyan.bold
       )
     );
