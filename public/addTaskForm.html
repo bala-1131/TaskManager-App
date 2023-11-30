@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assign Task</title>
-    <link rel="stylesheet" href="./css/addTaskForm.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assign Task</title>
+  <link rel="stylesheet" href="./css/addTaskForm.css">
 </head>
+
 <body>
-    
-<!--------------------------------------------------------HTML------------------------------------------------------------->   
-<section class="top-nav">
+
+  <!--------------------------------------------------------HTML------------------------------------------------------------->
+  <section class="top-nav">
     <div>
       To-Do App
     </div>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
-  </label>
+      <div class='menu-button'></div>
+    </label>
     <ul class="menu">
       <li><a href="admindashboard.html" style="text-decoration: none; color: white;">Home</a></li>
-        <li><a href="addTask.html" style="text-decoration: none; color: white;">Add Tasks</a></li>
-        <li><a href="assignTask.html" style="text-decoration: none; color: white;">Assign Tasks</a></li>
-        <li><a href="index.html" style="text-decoration: none; color: white;">Logout</a></li>
+      <li><a href="addTask.html" style="text-decoration: none; color: white;">Add Tasks</a></li>
+      <li><a href="assignTask.html" style="text-decoration: none; color: white;">Assign Tasks</a></li>
+      <li><a href="index.html" style="text-decoration: none; color: white;">Logout</a></li>
     </ul>
-  </section>    
+  </section>
 
-<div class="row">
-        <div class="col-md-12">
-          <form action="admindashboard.html">
-            <h1>Assign Task</h1>
-            
-            <fieldset>            
-            <div id="idly"></div>      
-             <label for="status">Status</label>
-              <select id="status" name="user_job">
-                  <option value="Completed">Completed</option>
-                  <option value="In Progress">In Progress</option>
-                  <option value="Pending">Pending</option>
-              </select>
-             </fieldset>
-            <button type="submit" onclick="display()">Assign Task</button>
-           </form>
-            </div>
-          </div> 
-          <script src="./js/addTaskForm.js"></script>
+  <div class="row">
+    <div class="col-md-12">
+      <form action="admindashboard.html">
+        <h1>Assign Task</h1>
+
+        <fieldset>
+          <div id="idly"></div>
+          <label for="status">Status</label>
+          <select id="status" name="user_job">
+            <option value="Completed">Completed</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Pending">Pending</option>
+          </select>
+        </fieldset>
+        <button type="submit" onclick="display()">Assign Task</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/addTaskForm.js"></script>
 </body>
+
 </html>

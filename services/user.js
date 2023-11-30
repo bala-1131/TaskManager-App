@@ -6,7 +6,7 @@ const User = require("../models/User");
  * Register a new user in the database
  * @param {*} req Get payload from the server
  * @param {*} res Response to the user
- * @returns Ack
+ * @returns Acknowledge the user
  */
 exports.register = async (req, res) => {
   const { username, email, password, role } = req.body;

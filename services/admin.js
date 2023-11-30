@@ -1,7 +1,3 @@
-const { hash, compare } = require("bcryptjs");
-const { sign } = require("jsonwebtoken");
-
-const User = require("../models/User");
 const Task = require("../models/Task");
 
 /**
