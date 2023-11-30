@@ -11,9 +11,9 @@ function register() {
     alert("Please fill all the details...");
   }
 
- /**
-  * To store the login credentials of the new user in Database
-  */
+  /**
+   * To store the login credentials of the new user in Database
+   */
   var http = new XMLHttpRequest();
   http.open("POST", "http://localhost:8080/api/v1/user/register", true);
   http.setRequestHeader("Content-Type", "application/json");

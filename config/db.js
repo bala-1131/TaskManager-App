@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
 /**
- * Connect th server to the MongoDB
- * @param {*} server
+ * Connect the server to the MongoDB
+ * @param {*} server 
  */
 
 module.exports = async (server) => {

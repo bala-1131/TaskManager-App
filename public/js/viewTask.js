@@ -80,7 +80,7 @@ document
       }
 
       if (match) {
-        rows[i].style.display = "";
+        rows[i].style.display = " ";
       } else {
         rows[i].style.display = "none";
       }

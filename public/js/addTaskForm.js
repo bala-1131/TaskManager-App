@@ -29,8 +29,8 @@ function title() {
 }
 
 /*
-* Collect the form values from the frontend 
-*/
+ * Collect the form values from the frontend
+ */
 
 function display() {
   let newTask = document.getElementById("title").value;

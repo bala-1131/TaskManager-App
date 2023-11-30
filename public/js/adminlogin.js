@@ -7,11 +7,9 @@ function AdminCheck() {
 
   if (!name || !password) {
     alert("Please fill all the details...");
-  }
-  else if ( name != "Admin" || password != "Admin@123") {
+  } else if (name != "Admin" || password != "Admin@123") {
     alert("Invalid Credentials...");
-  }
-  else{
+  } else {
     alert("Welcome Admin.");
     location.replace("http://localhost:8080/admindashboard.html");
     event.preventDefault();
